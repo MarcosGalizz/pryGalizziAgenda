@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             this.gunaBtnAgregar = new Guna.UI2.WinForms.Guna2Button();
             this.gunaBtnEliminar = new Guna.UI2.WinForms.Guna2Button();
             this.gunaBtnSalir = new Guna.UI2.WinForms.Guna2Button();
@@ -72,6 +73,7 @@
             this.gunaBtnEliminar.Size = new System.Drawing.Size(180, 45);
             this.gunaBtnEliminar.TabIndex = 1;
             this.gunaBtnEliminar.Text = "Eliminar actividad";
+            this.gunaBtnEliminar.Click += new System.EventHandler(this.gunaBtnEliminar_Click);
             // 
             // gunaBtnSalir
             // 
@@ -87,6 +89,7 @@
             this.gunaBtnSalir.Size = new System.Drawing.Size(180, 45);
             this.gunaBtnSalir.TabIndex = 2;
             this.gunaBtnSalir.Text = "Salir";
+            this.gunaBtnSalir.Click += new System.EventHandler(this.gunaBtnSalir_Click);
             // 
             // gunaLblTituloAgenda
             // 
@@ -111,7 +114,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gunaDgvAgenda.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gunaDgvAgenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gunaDgvAgenda.ColumnHeadersHeight = 15;
+            this.gunaDgvAgenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gunaDgvAgenda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.asunto,
             this.fecha,
@@ -141,7 +145,7 @@
             this.gunaDgvAgenda.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gunaDgvAgenda.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaDgvAgenda.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gunaDgvAgenda.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gunaDgvAgenda.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gunaDgvAgenda.ThemeStyle.HeaderStyle.Height = 15;
             this.gunaDgvAgenda.ThemeStyle.ReadOnly = false;
             this.gunaDgvAgenda.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -171,13 +175,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(749, 450);
             this.Controls.Add(this.gunaDgvAgenda);
             this.Controls.Add(this.gunaLblTituloAgenda);
             this.Controls.Add(this.gunaBtnSalir);
             this.Controls.Add(this.gunaBtnEliminar);
             this.Controls.Add(this.gunaBtnAgregar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agenda";
             this.Load += new System.EventHandler(this.frmInicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gunaDgvAgenda)).EndInit();

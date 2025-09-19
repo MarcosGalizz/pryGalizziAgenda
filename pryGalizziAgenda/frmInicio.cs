@@ -19,12 +19,25 @@ namespace pryGalizziAgenda
 
         private void frmInicio_Load(object sender, EventArgs e)
         {
-
+            clsConeccionBD clsConeccionBD = new clsConeccionBD();
+            clsConeccionBD.ConectarBD();
+            clsConeccionBD.cargarDgv(gunaDgvAgenda);
         }
 
         private void gunaBtnAgregar_Click(object sender, EventArgs e)
         {
+            frmActividades frmActividades = new frmActividades();
+            frmActividades.ShowDialog();
+        }
 
+        private void gunaBtnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void gunaBtnEliminar_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

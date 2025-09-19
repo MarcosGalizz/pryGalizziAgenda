@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmActividades));
             this.gunaLblActividad = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.gunaLblFecha = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.gunaLblObservacion = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -44,7 +45,7 @@
             this.gunaLblActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLblActividad.Location = new System.Drawing.Point(29, 40);
             this.gunaLblActividad.Name = "gunaLblActividad";
-            this.gunaLblActividad.Size = new System.Drawing.Size(59, 17);
+            this.gunaLblActividad.Size = new System.Drawing.Size(59, 18);
             this.gunaLblActividad.TabIndex = 4;
             this.gunaLblActividad.Text = "Actividad";
             // 
@@ -54,7 +55,7 @@
             this.gunaLblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLblFecha.Location = new System.Drawing.Point(29, 99);
             this.gunaLblFecha.Name = "gunaLblFecha";
-            this.gunaLblFecha.Size = new System.Drawing.Size(41, 17);
+            this.gunaLblFecha.Size = new System.Drawing.Size(41, 18);
             this.gunaLblFecha.TabIndex = 5;
             this.gunaLblFecha.Text = "Fecha";
             // 
@@ -64,37 +65,41 @@
             this.gunaLblObservacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLblObservacion.Location = new System.Drawing.Point(29, 167);
             this.gunaLblObservacion.Name = "gunaLblObservacion";
-            this.gunaLblObservacion.Size = new System.Drawing.Size(80, 17);
+            this.gunaLblObservacion.Size = new System.Drawing.Size(80, 18);
             this.gunaLblObservacion.TabIndex = 6;
             this.gunaLblObservacion.Text = "Observación";
             // 
             // gunaBtnAceptar
             // 
+            this.gunaBtnAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaBtnAceptar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.gunaBtnAceptar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.gunaBtnAceptar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.gunaBtnAceptar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.gunaBtnAceptar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaBtnAceptar.ForeColor = System.Drawing.Color.White;
-            this.gunaBtnAceptar.Location = new System.Drawing.Point(135, 306);
+            this.gunaBtnAceptar.Location = new System.Drawing.Point(125, 306);
             this.gunaBtnAceptar.Name = "gunaBtnAceptar";
             this.gunaBtnAceptar.Size = new System.Drawing.Size(180, 45);
             this.gunaBtnAceptar.TabIndex = 7;
             this.gunaBtnAceptar.Text = "Aceptar";
+            this.gunaBtnAceptar.Click += new System.EventHandler(this.gunaBtnAceptar_Click);
             // 
             // gunaBtnCancelar
             // 
+            this.gunaBtnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaBtnCancelar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.gunaBtnCancelar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.gunaBtnCancelar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.gunaBtnCancelar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.gunaBtnCancelar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaBtnCancelar.ForeColor = System.Drawing.Color.White;
-            this.gunaBtnCancelar.Location = new System.Drawing.Point(389, 306);
+            this.gunaBtnCancelar.Location = new System.Drawing.Point(413, 306);
             this.gunaBtnCancelar.Name = "gunaBtnCancelar";
             this.gunaBtnCancelar.Size = new System.Drawing.Size(180, 45);
             this.gunaBtnCancelar.TabIndex = 8;
             this.gunaBtnCancelar.Text = "Cancelar";
+            this.gunaBtnCancelar.Click += new System.EventHandler(this.gunaBtnCancelar_Click);
             // 
             // guna2TextBox1
             // 
@@ -143,7 +148,7 @@
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(458, 123);
+            this.guna2TextBox2.Size = new System.Drawing.Size(468, 123);
             this.guna2TextBox2.TabIndex = 11;
             // 
             // frmActividades
@@ -159,8 +164,11 @@
             this.Controls.Add(this.gunaLblObservacion);
             this.Controls.Add(this.gunaLblFecha);
             this.Controls.Add(this.gunaLblActividad);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmActividades";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Actividades";
+            this.Load += new System.EventHandler(this.frmActividades_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
