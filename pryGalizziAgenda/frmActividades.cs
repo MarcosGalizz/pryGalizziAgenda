@@ -24,7 +24,8 @@ namespace pryGalizziAgenda
 
         private void gunaBtnAceptar_Click(object sender, EventArgs e)
         {
-
+            clsConeccionBD clsConeccionBD = new clsConeccionBD();
+            clsConeccionBD.agregarActividad(gunaTxtActividad.Text, gunaDtpFecha.Text, gunaTxtObservacion.Text);
         }
 
         private void gunaBtnCancelar_Click(object sender, EventArgs e)

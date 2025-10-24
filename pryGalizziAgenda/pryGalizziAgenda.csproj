@@ -36,6 +36,9 @@
   <PropertyGroup>
     <StartupObject>pryGalizziAgenda.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Agenda.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net461\Guna.UI2.dll</HintPath>
@@ -101,6 +104,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Agenda.ico" />
     <Content Include="dbAgenda.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

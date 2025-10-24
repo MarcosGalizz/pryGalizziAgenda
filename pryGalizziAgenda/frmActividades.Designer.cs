@@ -34,9 +34,9 @@
             this.gunaLblObservacion = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.gunaBtnAceptar = new Guna.UI2.WinForms.Guna2Button();
             this.gunaBtnCancelar = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gunaTxtActividad = new Guna.UI2.WinForms.Guna2TextBox();
+            this.gunaDtpFecha = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.gunaTxtObservacion = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // gunaLblActividad
@@ -101,64 +101,64 @@
             this.gunaBtnCancelar.Text = "Cancelar";
             this.gunaBtnCancelar.Click += new System.EventHandler(this.gunaBtnCancelar_Click);
             // 
-            // guna2TextBox1
+            // gunaTxtActividad
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(125, 30);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(468, 39);
-            this.guna2TextBox1.TabIndex = 9;
+            this.gunaTxtActividad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTxtActividad.DefaultText = "";
+            this.gunaTxtActividad.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gunaTxtActividad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gunaTxtActividad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTxtActividad.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTxtActividad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTxtActividad.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTxtActividad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTxtActividad.Location = new System.Drawing.Point(125, 30);
+            this.gunaTxtActividad.Name = "gunaTxtActividad";
+            this.gunaTxtActividad.PlaceholderText = "";
+            this.gunaTxtActividad.SelectedText = "";
+            this.gunaTxtActividad.Size = new System.Drawing.Size(468, 39);
+            this.gunaTxtActividad.TabIndex = 9;
             // 
-            // guna2DateTimePicker1
+            // gunaDtpFecha
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(125, 90);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(261, 36);
-            this.guna2DateTimePicker1.TabIndex = 10;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2025, 9, 19, 18, 47, 41, 117);
+            this.gunaDtpFecha.Checked = true;
+            this.gunaDtpFecha.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaDtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.gunaDtpFecha.Location = new System.Drawing.Point(125, 90);
+            this.gunaDtpFecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gunaDtpFecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gunaDtpFecha.Name = "gunaDtpFecha";
+            this.gunaDtpFecha.Size = new System.Drawing.Size(261, 36);
+            this.gunaDtpFecha.TabIndex = 10;
+            this.gunaDtpFecha.Value = new System.DateTime(2025, 9, 19, 18, 47, 41, 117);
             // 
-            // guna2TextBox2
+            // gunaTxtObservacion
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(125, 157);
-            this.guna2TextBox2.Multiline = true;
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(468, 123);
-            this.guna2TextBox2.TabIndex = 11;
+            this.gunaTxtObservacion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTxtObservacion.DefaultText = "";
+            this.gunaTxtObservacion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gunaTxtObservacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gunaTxtObservacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTxtObservacion.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTxtObservacion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTxtObservacion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTxtObservacion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTxtObservacion.Location = new System.Drawing.Point(125, 157);
+            this.gunaTxtObservacion.Multiline = true;
+            this.gunaTxtObservacion.Name = "gunaTxtObservacion";
+            this.gunaTxtObservacion.PlaceholderText = "";
+            this.gunaTxtObservacion.SelectedText = "";
+            this.gunaTxtObservacion.Size = new System.Drawing.Size(468, 123);
+            this.gunaTxtObservacion.TabIndex = 11;
             // 
             // frmActividades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(670, 387);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.gunaTxtObservacion);
+            this.Controls.Add(this.gunaDtpFecha);
+            this.Controls.Add(this.gunaTxtActividad);
             this.Controls.Add(this.gunaBtnCancelar);
             this.Controls.Add(this.gunaBtnAceptar);
             this.Controls.Add(this.gunaLblObservacion);
@@ -181,8 +181,8 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel gunaLblObservacion;
         private Guna.UI2.WinForms.Guna2Button gunaBtnAceptar;
         private Guna.UI2.WinForms.Guna2Button gunaBtnCancelar;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox gunaTxtActividad;
+        private Guna.UI2.WinForms.Guna2DateTimePicker gunaDtpFecha;
+        private Guna.UI2.WinForms.Guna2TextBox gunaTxtObservacion;
     }
 }

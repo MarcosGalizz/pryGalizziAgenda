@@ -63,7 +63,7 @@ namespace pryGalizziAgenda
                 MessageBox.Show("Error en la categoría o el valor ingresado.");
             }
         }
-        public void agregarProductos(string actividad, string fecha, string observacion)
+        public void agregarActividad(string actividad, string fecha, string observacion)
         {
             coneccionBaseDatos = new OleDbConnection(cadenaConexion);
             coneccionBaseDatos.Open();
