@@ -56,10 +56,9 @@
             this.gunaBtnAgregar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.gunaBtnAgregar.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.gunaBtnAgregar.ForeColor = System.Drawing.Color.White;
-            this.gunaBtnAgregar.Location = new System.Drawing.Point(65, 453);
-            this.gunaBtnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaBtnAgregar.Location = new System.Drawing.Point(49, 368);
             this.gunaBtnAgregar.Name = "gunaBtnAgregar";
-            this.gunaBtnAgregar.Size = new System.Drawing.Size(240, 55);
+            this.gunaBtnAgregar.Size = new System.Drawing.Size(180, 45);
             this.gunaBtnAgregar.TabIndex = 0;
             this.gunaBtnAgregar.Text = "Agregar actividad";
             this.gunaBtnAgregar.Click += new System.EventHandler(this.gunaBtnAgregar_Click);
@@ -75,10 +74,9 @@
             this.gunaBtnEliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.gunaBtnEliminar.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.gunaBtnEliminar.ForeColor = System.Drawing.Color.White;
-            this.gunaBtnEliminar.Location = new System.Drawing.Point(377, 453);
-            this.gunaBtnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaBtnEliminar.Location = new System.Drawing.Point(283, 368);
             this.gunaBtnEliminar.Name = "gunaBtnEliminar";
-            this.gunaBtnEliminar.Size = new System.Drawing.Size(240, 55);
+            this.gunaBtnEliminar.Size = new System.Drawing.Size(180, 45);
             this.gunaBtnEliminar.TabIndex = 1;
             this.gunaBtnEliminar.Text = "Eliminar actividad";
             this.gunaBtnEliminar.Click += new System.EventHandler(this.gunaBtnEliminar_Click);
@@ -94,10 +92,9 @@
             this.gunaBtnSalir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.gunaBtnSalir.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.gunaBtnSalir.ForeColor = System.Drawing.Color.White;
-            this.gunaBtnSalir.Location = new System.Drawing.Point(685, 453);
-            this.gunaBtnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaBtnSalir.Location = new System.Drawing.Point(514, 368);
             this.gunaBtnSalir.Name = "gunaBtnSalir";
-            this.gunaBtnSalir.Size = new System.Drawing.Size(240, 55);
+            this.gunaBtnSalir.Size = new System.Drawing.Size(180, 45);
             this.gunaBtnSalir.TabIndex = 2;
             this.gunaBtnSalir.Text = "Salir";
             this.gunaBtnSalir.Click += new System.EventHandler(this.gunaBtnSalir_Click);
@@ -107,10 +104,9 @@
             this.gunaLblTituloAgenda.AutoSize = false;
             this.gunaLblTituloAgenda.BackColor = System.Drawing.Color.Transparent;
             this.gunaLblTituloAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLblTituloAgenda.Location = new System.Drawing.Point(336, 27);
-            this.gunaLblTituloAgenda.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaLblTituloAgenda.Location = new System.Drawing.Point(252, 22);
             this.gunaLblTituloAgenda.Name = "gunaLblTituloAgenda";
-            this.gunaLblTituloAgenda.Size = new System.Drawing.Size(300, 38);
+            this.gunaLblTituloAgenda.Size = new System.Drawing.Size(225, 31);
             this.gunaLblTituloAgenda.TabIndex = 3;
             this.gunaLblTituloAgenda.Text = "Agenda de actividades";
             // 
@@ -141,12 +137,11 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gunaDgvAgenda.DefaultCellStyle = dataGridViewCellStyle3;
             this.gunaDgvAgenda.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDgvAgenda.Location = new System.Drawing.Point(65, 73);
-            this.gunaDgvAgenda.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaDgvAgenda.Location = new System.Drawing.Point(49, 59);
             this.gunaDgvAgenda.Name = "gunaDgvAgenda";
             this.gunaDgvAgenda.RowHeadersVisible = false;
             this.gunaDgvAgenda.RowHeadersWidth = 51;
-            this.gunaDgvAgenda.Size = new System.Drawing.Size(860, 326);
+            this.gunaDgvAgenda.Size = new System.Drawing.Size(645, 265);
             this.gunaDgvAgenda.TabIndex = 4;
             this.gunaDgvAgenda.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDgvAgenda.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -191,10 +186,10 @@
             // pcbActualizar
             // 
             this.pcbActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbActualizar.Image = global::pryGalizziAgenda.Properties.Resources.actualizar;
-            this.pcbActualizar.Location = new System.Drawing.Point(889, 39);
+            this.pcbActualizar.Location = new System.Drawing.Point(667, 32);
+            this.pcbActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcbActualizar.Name = "pcbActualizar";
-            this.pcbActualizar.Size = new System.Drawing.Size(36, 27);
+            this.pcbActualizar.Size = new System.Drawing.Size(27, 21);
             this.pcbActualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pcbActualizar.TabIndex = 5;
             this.pcbActualizar.TabStop = false;
@@ -202,9 +197,9 @@
             // 
             // frmInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 554);
+            this.ClientSize = new System.Drawing.Size(749, 450);
             this.Controls.Add(this.pcbActualizar);
             this.Controls.Add(this.gunaDgvAgenda);
             this.Controls.Add(this.gunaLblTituloAgenda);
@@ -212,7 +207,6 @@
             this.Controls.Add(this.gunaBtnEliminar);
             this.Controls.Add(this.gunaBtnAgregar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agenda";
