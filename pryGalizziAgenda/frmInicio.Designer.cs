@@ -186,11 +186,12 @@
             // pcbActualizar
             // 
             this.pcbActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcbActualizar.Image = global::pryGalizziAgenda.Properties.Resources.actualizar;
             this.pcbActualizar.Location = new System.Drawing.Point(667, 32);
-            this.pcbActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.pcbActualizar.Name = "pcbActualizar";
             this.pcbActualizar.Size = new System.Drawing.Size(27, 21);
-            this.pcbActualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pcbActualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbActualizar.TabIndex = 5;
             this.pcbActualizar.TabStop = false;
             this.pcbActualizar.Click += new System.EventHandler(this.pcbActualizar_Click);
