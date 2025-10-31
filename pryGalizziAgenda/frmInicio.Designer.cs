@@ -40,53 +40,64 @@
             this.asunto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.observacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pcbActualizar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDgvAgenda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbActualizar)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaBtnAgregar
             // 
+            this.gunaBtnAgregar.Animated = true;
+            this.gunaBtnAgregar.AutoRoundedCorners = true;
             this.gunaBtnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaBtnAgregar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.gunaBtnAgregar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.gunaBtnAgregar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.gunaBtnAgregar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.gunaBtnAgregar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaBtnAgregar.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.gunaBtnAgregar.ForeColor = System.Drawing.Color.White;
-            this.gunaBtnAgregar.Location = new System.Drawing.Point(49, 368);
+            this.gunaBtnAgregar.Location = new System.Drawing.Point(65, 453);
+            this.gunaBtnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.gunaBtnAgregar.Name = "gunaBtnAgregar";
-            this.gunaBtnAgregar.Size = new System.Drawing.Size(180, 45);
+            this.gunaBtnAgregar.Size = new System.Drawing.Size(240, 55);
             this.gunaBtnAgregar.TabIndex = 0;
             this.gunaBtnAgregar.Text = "Agregar actividad";
             this.gunaBtnAgregar.Click += new System.EventHandler(this.gunaBtnAgregar_Click);
             // 
             // gunaBtnEliminar
             // 
+            this.gunaBtnEliminar.Animated = true;
+            this.gunaBtnEliminar.AutoRoundedCorners = true;
             this.gunaBtnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaBtnEliminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.gunaBtnEliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.gunaBtnEliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.gunaBtnEliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.gunaBtnEliminar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaBtnEliminar.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.gunaBtnEliminar.ForeColor = System.Drawing.Color.White;
-            this.gunaBtnEliminar.Location = new System.Drawing.Point(283, 368);
+            this.gunaBtnEliminar.Location = new System.Drawing.Point(377, 453);
+            this.gunaBtnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.gunaBtnEliminar.Name = "gunaBtnEliminar";
-            this.gunaBtnEliminar.Size = new System.Drawing.Size(180, 45);
+            this.gunaBtnEliminar.Size = new System.Drawing.Size(240, 55);
             this.gunaBtnEliminar.TabIndex = 1;
             this.gunaBtnEliminar.Text = "Eliminar actividad";
             this.gunaBtnEliminar.Click += new System.EventHandler(this.gunaBtnEliminar_Click);
             // 
             // gunaBtnSalir
             // 
+            this.gunaBtnSalir.Animated = true;
+            this.gunaBtnSalir.AutoRoundedCorners = true;
             this.gunaBtnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaBtnSalir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.gunaBtnSalir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.gunaBtnSalir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.gunaBtnSalir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.gunaBtnSalir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaBtnSalir.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.gunaBtnSalir.ForeColor = System.Drawing.Color.White;
-            this.gunaBtnSalir.Location = new System.Drawing.Point(514, 368);
+            this.gunaBtnSalir.Location = new System.Drawing.Point(685, 453);
+            this.gunaBtnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.gunaBtnSalir.Name = "gunaBtnSalir";
-            this.gunaBtnSalir.Size = new System.Drawing.Size(180, 45);
+            this.gunaBtnSalir.Size = new System.Drawing.Size(240, 55);
             this.gunaBtnSalir.TabIndex = 2;
             this.gunaBtnSalir.Text = "Salir";
             this.gunaBtnSalir.Click += new System.EventHandler(this.gunaBtnSalir_Click);
@@ -96,9 +107,10 @@
             this.gunaLblTituloAgenda.AutoSize = false;
             this.gunaLblTituloAgenda.BackColor = System.Drawing.Color.Transparent;
             this.gunaLblTituloAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLblTituloAgenda.Location = new System.Drawing.Point(252, 22);
+            this.gunaLblTituloAgenda.Location = new System.Drawing.Point(336, 27);
+            this.gunaLblTituloAgenda.Margin = new System.Windows.Forms.Padding(4);
             this.gunaLblTituloAgenda.Name = "gunaLblTituloAgenda";
-            this.gunaLblTituloAgenda.Size = new System.Drawing.Size(225, 31);
+            this.gunaLblTituloAgenda.Size = new System.Drawing.Size(300, 38);
             this.gunaLblTituloAgenda.TabIndex = 3;
             this.gunaLblTituloAgenda.Text = "Agenda de actividades";
             // 
@@ -129,10 +141,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gunaDgvAgenda.DefaultCellStyle = dataGridViewCellStyle3;
             this.gunaDgvAgenda.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDgvAgenda.Location = new System.Drawing.Point(49, 59);
+            this.gunaDgvAgenda.Location = new System.Drawing.Point(65, 73);
+            this.gunaDgvAgenda.Margin = new System.Windows.Forms.Padding(4);
             this.gunaDgvAgenda.Name = "gunaDgvAgenda";
             this.gunaDgvAgenda.RowHeadersVisible = false;
-            this.gunaDgvAgenda.Size = new System.Drawing.Size(645, 265);
+            this.gunaDgvAgenda.RowHeadersWidth = 51;
+            this.gunaDgvAgenda.Size = new System.Drawing.Size(860, 326);
             this.gunaDgvAgenda.TabIndex = 4;
             this.gunaDgvAgenda.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gunaDgvAgenda.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -159,34 +173,52 @@
             // asunto
             // 
             this.asunto.HeaderText = "Asunto";
+            this.asunto.MinimumWidth = 6;
             this.asunto.Name = "asunto";
             // 
             // fecha
             // 
             this.fecha.HeaderText = "Fecha";
+            this.fecha.MinimumWidth = 6;
             this.fecha.Name = "fecha";
             // 
             // observacion
             // 
             this.observacion.HeaderText = "Observacion";
+            this.observacion.MinimumWidth = 6;
             this.observacion.Name = "observacion";
+            // 
+            // pcbActualizar
+            // 
+            this.pcbActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pcbActualizar.Image = global::pryGalizziAgenda.Properties.Resources.actualizar;
+            this.pcbActualizar.Location = new System.Drawing.Point(889, 39);
+            this.pcbActualizar.Name = "pcbActualizar";
+            this.pcbActualizar.Size = new System.Drawing.Size(36, 27);
+            this.pcbActualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pcbActualizar.TabIndex = 5;
+            this.pcbActualizar.TabStop = false;
+            this.pcbActualizar.Click += new System.EventHandler(this.pcbActualizar_Click);
             // 
             // frmInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 450);
+            this.ClientSize = new System.Drawing.Size(999, 554);
+            this.Controls.Add(this.pcbActualizar);
             this.Controls.Add(this.gunaDgvAgenda);
             this.Controls.Add(this.gunaLblTituloAgenda);
             this.Controls.Add(this.gunaBtnSalir);
             this.Controls.Add(this.gunaBtnEliminar);
             this.Controls.Add(this.gunaBtnAgregar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agenda";
             this.Load += new System.EventHandler(this.frmInicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gunaDgvAgenda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbActualizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,5 +233,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn asunto;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn observacion;
+        private System.Windows.Forms.PictureBox pcbActualizar;
     }
 }

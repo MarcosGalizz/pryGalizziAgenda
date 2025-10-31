@@ -46,6 +46,7 @@ namespace pryGalizziAgenda
         {
             try
             {
+                dgvActividades.Rows.Clear();
                 coneccionBaseDatos = new OleDbConnection(cadenaConexion);
                 coneccionBaseDatos.Open();
                 comandoBaseDatos = new OleDbCommand();
@@ -65,17 +66,50 @@ namespace pryGalizziAgenda
         }
         public void agregarActividad(string actividad, string fecha, string observacion)
         {
-            coneccionBaseDatos = new OleDbConnection(cadenaConexion);
-            coneccionBaseDatos.Open();
-            comandoBaseDatos = new OleDbCommand();
-            comandoBaseDatos.Connection = coneccionBaseDatos;
-            comandoBaseDatos.CommandText = "SELECT MAX(IdActividad) FROM Actividades;";
-            lectorDataReader = comandoBaseDatos.ExecuteReader();
-            int ultimoId = Convert.ToInt32(lectorDataReader[0]);
-            comandoBaseDatos.CommandText = $"INSERT INTO Actividades (IdActividad, Asunto, Fecha, Observacion" +
-        $"VALUES ({ultimoId++}, '{actividad}', {fecha}, {observacion})";
-            lectorDataReader = comandoBaseDatos.ExecuteReader();
-            MessageBox.Show("Producto agregado con éxito.");
+            try
+            {
+
+                coneccionBaseDatos = new OleDbConnection(cadenaConexion);
+                coneccionBaseDatos.Open();
+                comandoBaseDatos = new OleDbCommand();
+                comandoBaseDatos.Connection = coneccionBaseDatos;
+                comandoBaseDatos.CommandText = "SELECT MAX(IdActividad) FROM Actividades;";
+                object resultado = comandoBaseDatos.ExecuteScalar();
+                int ultimoId = 0;
+                if (resultado != null)
+                {
+                    ultimoId = Convert.ToInt32(resultado);
+                }
+                int nuevoId = ultimoId++;
+
+                comandoBaseDatos.CommandText = $"INSERT INTO Actividades (Asunto, Fecha, Observación) " +
+                               $"VALUES ('{actividad}', #{fecha}#, '{observacion}')";
+                comandoBaseDatos.ExecuteNonQuery();
+                MessageBox.Show("Actividad agregada con éxito.");
+                coneccionBaseDatos.Close();
+            }
+            catch
+            {
+                MessageBox.Show("No se pudo agregar la actividad.");
+            }
+        }
+        public void eliminarActividad(string asunto)
+        {
+            try
+            {
+                coneccionBaseDatos = new OleDbConnection(cadenaConexion);
+                coneccionBaseDatos.Open();
+                comandoBaseDatos = new OleDbCommand();
+                comandoBaseDatos.Connection = coneccionBaseDatos;
+                comandoBaseDatos.CommandText = $"DELETE FROM Actividades WHERE Asunto = '{asunto}'";
+                comandoBaseDatos.ExecuteNonQuery();
+                MessageBox.Show("Actividad eliminada.");
+                coneccionBaseDatos.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Error al eliminar actividad.");
+            }
         }
     }
 }

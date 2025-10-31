@@ -37,7 +37,19 @@ namespace pryGalizziAgenda
 
         private void gunaBtnEliminar_Click(object sender, EventArgs e)
         {
-            
+            clsConeccionBD clsConeccion = new clsConeccionBD();
+            if (gunaDgvAgenda.CurrentRow != null)
+            {
+                string asunto = gunaDgvAgenda.CurrentRow.Cells[0].Value.ToString();
+                clsConeccion.eliminarActividad(asunto);
+                clsConeccion.cargarDgv(gunaDgvAgenda);
+            }
+        }
+
+        private void pcbActualizar_Click(object sender, EventArgs e)
+        {
+            clsConeccionBD clsConeccionBD = new clsConeccionBD();
+            clsConeccionBD.cargarDgv(gunaDgvAgenda);
         }
     }
 }
