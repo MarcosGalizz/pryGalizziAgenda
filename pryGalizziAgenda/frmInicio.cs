@@ -51,5 +51,11 @@ namespace pryGalizziAgenda
             clsConeccionBD clsConeccionBD = new clsConeccionBD();
             clsConeccionBD.cargarDgv(gunaDgvAgenda);
         }
+
+        private void gunaBtnActualizar_Click(object sender, EventArgs e)
+        {
+            clsConeccionBD clsConeccionBD = new clsConeccionBD();
+            clsConeccionBD.cargarDgv(gunaDgvAgenda);
+        }
     }
 }

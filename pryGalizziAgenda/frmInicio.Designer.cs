@@ -40,9 +40,8 @@
             this.asunto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.observacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pcbActualizar = new System.Windows.Forms.PictureBox();
+            this.gunaBtnActualizar = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDgvAgenda)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbActualizar)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaBtnAgregar
@@ -183,25 +182,28 @@
             this.observacion.MinimumWidth = 6;
             this.observacion.Name = "observacion";
             // 
-            // pcbActualizar
+            // gunaBtnActualizar
             // 
-            this.pcbActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbActualizar.Image = global::pryGalizziAgenda.Properties.Resources.actualizar;
-            this.pcbActualizar.Location = new System.Drawing.Point(667, 32);
-            this.pcbActualizar.Margin = new System.Windows.Forms.Padding(2);
-            this.pcbActualizar.Name = "pcbActualizar";
-            this.pcbActualizar.Size = new System.Drawing.Size(27, 21);
-            this.pcbActualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbActualizar.TabIndex = 5;
-            this.pcbActualizar.TabStop = false;
-            this.pcbActualizar.Click += new System.EventHandler(this.pcbActualizar_Click);
+            this.gunaBtnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaBtnActualizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.gunaBtnActualizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.gunaBtnActualizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.gunaBtnActualizar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.gunaBtnActualizar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaBtnActualizar.ForeColor = System.Drawing.Color.White;
+            this.gunaBtnActualizar.Location = new System.Drawing.Point(646, 22);
+            this.gunaBtnActualizar.Name = "gunaBtnActualizar";
+            this.gunaBtnActualizar.Size = new System.Drawing.Size(48, 31);
+            this.gunaBtnActualizar.TabIndex = 5;
+            this.gunaBtnActualizar.Text = "🔄";
+            this.gunaBtnActualizar.Click += new System.EventHandler(this.gunaBtnActualizar_Click);
             // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(749, 450);
-            this.Controls.Add(this.pcbActualizar);
+            this.Controls.Add(this.gunaBtnActualizar);
             this.Controls.Add(this.gunaDgvAgenda);
             this.Controls.Add(this.gunaLblTituloAgenda);
             this.Controls.Add(this.gunaBtnSalir);
@@ -213,7 +215,6 @@
             this.Text = "Agenda";
             this.Load += new System.EventHandler(this.frmInicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gunaDgvAgenda)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbActualizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -228,6 +229,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn asunto;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn observacion;
-        private System.Windows.Forms.PictureBox pcbActualizar;
+        private Guna.UI2.WinForms.Guna2Button gunaBtnActualizar;
     }
 }
